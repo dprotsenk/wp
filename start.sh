@@ -66,7 +66,7 @@ do
 	echo $((40-$i))
 done	
 NEW_SERVER=$(grep "PrivateIpAddress" wordpress_server.out |grep -v $(ip a |grep " inet "|grep -v 127|cut -d" " -f 6|cut -d'/' -f1)|cut -d'"' -f4|sort|uniq |grep ".")
-NEW_SERVER_PUBLIC_IP=$(aws ec2 describe-instances| grep wpenv -A15 |grep PublicIpAd|cut -d"\"" -f 4)
+NEW_SERVER_PUBLIC_IP=$(aws ec2 describe-instances| grep wpenv -A40 |grep PublicIpAd|cut -d"\"" -f 4)
 	print_logs "The private IP for WORDPRESS server is ${NEW_SERVER}"
 
 	print_logs "Start configuring WORDPRESS instance"
