@@ -47,7 +47,7 @@ output = json
 region = eu-west-1" > ~/.aws/config
 	print_logs "Keys added"
 
-	print_logs "Creating security group and provide access to port 80 from world and port 22 (ssh) for jump host (${JUMP_HOST_IP})"
+	print_logs "Creating security group and provide access to port 80 from world and port 22 (ssh) from jump host (${JUMP_HOST_IP})"
 aws ec2 create-security-group --group-name wpenv --description "security group for wordpress environment in EC2"
 aws ec2 authorize-security-group-ingress --group-name wpenv --protocol tcp --port 22 --cidr $JUMP_HOST_IP/32
 aws ec2 authorize-security-group-ingress --group-name wpenv --protocol tcp --port 80 --cidr 0.0.0.0/0
