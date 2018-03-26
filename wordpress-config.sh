@@ -132,3 +132,6 @@ require_once(ABSPATH . 'wp-settings.php');" > /var/www/html/wp-config.php
 print_logs "Restart Apache2"
 	systemctl restart apache2
 
+##################################################################
+############################The End
+##################################################################
