@@ -4,7 +4,7 @@ Go to Services -> IAM -> Users -> user name -> Security credentials -> Create Ac
 
 1) SSH to jump_host
 2) git init
-3) git pull https://github.com/dprotsenk/testtest.git
+3) git pull https://github.com/dprotsenk/wp.git
 4) chmod +x start.sh
 5) change variables in start.sh
 6) change variables in wordpress-config.sh
