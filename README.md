@@ -1,5 +1,5 @@
 AWS Part
-1) Create Jump_Host -> Go to Services -> EC2 -> Lunch Instance -> Select ami-1b791862 (Ubuntu Server 16.04 LTS) -> t2.micro -> Review and Launch -> Launch -> Launch Instance -> View Instances | jump_host
+1) Create jump_host -> Go to Services -> EC2 -> Lunch Instance -> Select ami-1b791862 (Ubuntu Server 16.04 LTS) -> t2.micro -> Review and Launch -> Launch -> Launch Instance -> View Instances
 2) Create IAM user -> Go to Services -> IAM -> Users -> Add user (Access type: Programmatic access) -> Next -> Set permissions (Administrator) -> Next -> Create User
 3) Find Access keys -> Go to Services -> IAM -> Users -> user name -> Security credentials -> Create Access Key -> Copy ACCESS_KEY and SECRET_KEY to start.sh
 
