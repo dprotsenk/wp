@@ -1,7 +1,9 @@
-Go to Services -> EC2 -> Lunch Instance -> Select ami-1b791862 (Ubuntu Server 16.04 LTS) -> t2.micro -> Review and Launch -> Launch -> Launch Instance -> View Instances | jump_host
-Go to Services -> IAM -> Users -> Add user (Access type: Programmatic access) -> Next -> Set permissions (Administrator) -> Next -> Create User
-Go to Services -> IAM -> Users -> user name -> Security credentials -> Create Access Key -> Copy ACCESS_KEY and SECRET_KEY to start.sh
+AWS Part
+1) Go to Services -> EC2 -> Lunch Instance -> Select ami-1b791862 (Ubuntu Server 16.04 LTS) -> t2.micro -> Review and Launch -> Launch -> Launch Instance -> View Instances | jump_host
+2) Go to Services -> IAM -> Users -> Add user (Access type: Programmatic access) -> Next -> Set permissions (Administrator) -> Next -> Create User
+3) Go to Services -> IAM -> Users -> user name -> Security credentials -> Create Access Key -> Copy ACCESS_KEY and SECRET_KEY to start.sh
 
+Linux Part
 1) SSH to jump_host
 2) git init
 3) git pull https://github.com/dprotsenk/wp.git
